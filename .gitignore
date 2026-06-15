@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps/backups (keep canonical schema file)
+*.sql.bak
+*.sql.gz
+*.dump
+
+# Local logs
+*.log

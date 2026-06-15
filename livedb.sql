@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS electlead CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE electlead;
+CREATE DATABASE IF NOT EXISTS u289716347_electlead CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE u289716347_electlead;
 
 CREATE TABLE IF NOT EXISTS admins (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS admins (
   password_hash VARCHAR(255) NOT NULL,
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
-                                                                                                  
+
 CREATE TABLE IF NOT EXISTS voters (
   voter_id VARCHAR(50) PRIMARY KEY,
   full_name VARCHAR(200) NOT NULL,

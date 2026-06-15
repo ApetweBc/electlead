@@ -36,6 +36,29 @@ php -S localhost:8000
    - Client portal: `http://localhost:8000/index.php`
    - Admin portal: `http://localhost:8000/admin/login.php`
 
+## Git Ignore And Team Usage
+
+This project now includes `.gitignore` rules to prevent sensitive/local files from being committed.
+
+Ignored by default:
+
+- `.env`
+- `.env.*`
+- `*.db`, `*.sqlite`, `*.sqlite3`
+- `*.sql.bak`, `*.sql.gz`, `*.dump`
+- `*.log`
+
+Allowed template file:
+
+- `.env.example` (safe to commit for shared config template)
+
+Team guidance:
+
+1. Store real credentials only in local `.env` (or local machine environment variables).
+2. Do not commit database dumps, backup files, or logs.
+3. Keep `database.sql` in git as the canonical schema/bootstrap script.
+4. Before pushing, check `git status` to confirm no secret/local files are staged.
+
 ## Default Admin Credentials
 
 - Username: `Root`
